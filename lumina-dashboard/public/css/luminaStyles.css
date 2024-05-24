@@ -1,0 +1,58 @@
+.bg-darker {
+    background-color: black; 
+}
+
+.bg-btn-darker {
+    background-color: black;
+    color: #fff;
+}
+
+.container-button{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: left;
+    gap: 5px;
+}
+
+.button-style {
+    width: 50%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.dark-card {
+    width: 100%;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    height: 45px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-style:hover, .dark-card:hover {
+    background-color: #F6F6F6;
+    color: black;
+    border: 1px solid black;
+}
+
+.full-screen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 0;
+    padding: 0;
+}
