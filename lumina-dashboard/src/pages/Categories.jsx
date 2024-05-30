@@ -1,15 +1,15 @@
-import { Component } from 'react';
+import { Component } from "react";
 
-import CategoriesInDb from '../components/CategoriesInDb';
+import CategoriesInDb from "../components/CategoriesInDb";
 
 class Categories extends Component {
-    render() {
-        return (
-            <div className='full-screen'>
-                <CategoriesInDb />
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="full-screen">
+        <CategoriesInDb />
+      </div>
+    );
+  }
 }
 
 export default Categories;

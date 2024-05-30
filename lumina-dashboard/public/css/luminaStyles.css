@@ -56,3 +56,12 @@
     margin: 0;
     padding: 0;
 }
+
+.page-link {
+    cursor: pointer;
+}
+
+.active-page .page-link {
+    background-color: #ddd;
+    text-decoration: underline;
+  }

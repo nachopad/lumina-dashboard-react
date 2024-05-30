@@ -1,29 +1,31 @@
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-import SmallCard from './SmallCard';
+import SmallCard from "./SmallCard";
 
 function ContentRowProducts({ data }) {
-    return (
-        <div className="row">
-            {data.map((element, index) => {
-                return <SmallCard
-                    key={index}
-                    title={element.title} 
-                    quantity={element.quantity} 
-                    color={element.color} 
-                    icon={element.icon} 
-                />
-            })}
-        </div>
-    )
+  return (
+    <div className="row">
+      {data.map((element, index) => {
+        return (
+          <SmallCard
+            key={index}
+            title={element.title}
+            quantity={element.quantity}
+            color={element.color}
+            icon={element.icon}
+          />
+        );
+      })}
+    </div>
+  );
 }
 
 ContentRowProducts.propTypes = {
-    data: PropTypes.array.isRequired
-}
+  data: PropTypes.array.isRequired,
+};
 
 ContentRowProducts.defaultProps = {
-    data: []
-}
+  data: [],
+};
 
 export default ContentRowProducts;
