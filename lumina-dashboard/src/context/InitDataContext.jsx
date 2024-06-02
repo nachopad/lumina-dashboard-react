@@ -12,7 +12,8 @@ function InitDataProvider({ children }) {
       try {
         const products = await axios.get("http://localhost:3000/api/products/list");
         const users = await axios.get("http://localhost:3000/api/users/list");
-        setData({ products: products, users: users });
+        const sales = await axios.get("http://localhost:3000/api/orders/list");
+        setData({ products: products, users: users, sales: sales });
       } catch (error) {
         throw new Error(error);
       }

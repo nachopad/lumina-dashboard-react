@@ -4,8 +4,8 @@ import SideBar from './components/SideBar';
 import Home from './pages/Home';
 import ProductsPage from './pages/Products';
 import Categories from './pages/Categories';
-import Product from './pages/Product';
 import Users from './pages/Users';
+import Sales from './pages/Sales';
 import NotFound from './pages/NotFound';
 
 import './App.css';
@@ -20,8 +20,7 @@ function App() {
         <Route path='/products' component={ProductsPage} />
         <Route path='/categories' component={Categories} />
         <Route path='/users' component={Users}/>
-        <Route path='/sales' component={ProductsPage}/>
-        <Route path='/product/:id' component={Product}/>
+        <Route path='/sales' component={Sales}/>
         <Route path='*' component={NotFound}/>
       </Switch>
     </div>

@@ -1,15 +1,15 @@
 import { Component } from "react";
 
-import User from "../components/Users";
+import Sale from "../components/Sale";
 
-class Users extends Component {
+class Sales extends Component {
   render() {
     return (
       <div id="content-wrapper" className="d-flex flex-column">
-        <User />
+        <Sale />
       </div>
     );
   }
 }
 
-export default Users;
+export default Sales;
